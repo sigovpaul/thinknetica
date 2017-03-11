@@ -5,6 +5,7 @@ puts "Введите b:"
 side2 = gets.chomp.to_f
 puts "Введите c:"
 side3 = gets.chomp.to_f
+
 if side1 == side2 || side2 == side3 || side3 == side1
   puts "Треугольник является равнобедренным"
 else
