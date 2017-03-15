@@ -4,9 +4,9 @@ puts "Введите число, при котором запись массив
 a = gets.chomp.to_f
 i = 2
 loop do 
-  new_element = array[i - 1] + array[i - 2]
+  new_element = array[ - 1] + array[ - 2]
 break if new_element > a
-  array << (new_element)
+  array << new_element
   i += 1
 end
 puts array 
