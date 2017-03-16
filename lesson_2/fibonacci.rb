@@ -2,11 +2,10 @@
 array = [0,1]
 puts "Введите число, при котором запись массива должна быть остановлена:"
 a = gets.chomp.to_f
-i = 2
-loop do 
-  new_element = array[ - 1] + array[ - 2]
-break if new_element > a
+#i = 1
+until array.last < a do
+  new_element = array.last + array[ - 2]
   array << new_element
-  i += 1
+  puts array
 end
-puts array 
+ 
