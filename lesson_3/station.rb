@@ -6,4 +6,21 @@
 Может показывать список поездов на станции по типу (см. ниже): кол-во грузовых, пассажирских
 Может отправлять поезда (по одному за раз, при этом, поезд удаляется из списка поездов, находящихся на станции).
 =end
-pust scan(/pattern/) { |match|  }
+
+class Station
+  def initialize(name)
+    @name = name
+  end
+
+  def arrive(train)
+    @train = train
+  end
+
+  def show_trains_list
+
+  end
+
+  def depart
+    
+  end
+end
