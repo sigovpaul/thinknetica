@@ -7,20 +7,12 @@
 Может отправлять поезда (по одному за раз, при этом, поезд удаляется из списка поездов, находящихся на станции).
 =end
 
+
 class Station
-  def initialize(name)
+
+  def initiolize(name)
     @name = name
+    @trains = []
   end
 
-  def arrive(train)
-    @train = train
-  end
-
-  def show_trains_list
-
-  end
-
-  def depart
-    
-  end
 end
