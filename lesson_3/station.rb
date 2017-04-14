@@ -19,6 +19,12 @@ class Station
     puts "#{@trains.size}"
     puts "#{@trains}"
   end
- 
+ def depart(train)
+    @train = train
+     @trains = Array.new
+    @trains.delete(@train)
+    puts "#{@trains.size}"
+    puts "#{@trains}"
+  end
 
 end
