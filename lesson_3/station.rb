@@ -27,8 +27,11 @@ class Station
     puts "#{@trains.size}"
     puts "#{@trains}"
   end
-  def trains_list
+  def trains
     puts "#{@trains}"
   end
+end
+
+class Route
 
 end
