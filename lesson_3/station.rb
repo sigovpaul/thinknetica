@@ -9,8 +9,9 @@
 
 class Station
 
-  def initiolize(name)
+  def initialize(name)
     @name = name
+    @trains = []
   end
     def arrive(train)
     @train = train
@@ -24,6 +25,9 @@ class Station
      @trains = Array.new
     @trains.delete(@train)
     puts "#{@trains.size}"
+    puts "#{@trains}"
+  end
+  def trains_list
     puts "#{@trains}"
   end
 
