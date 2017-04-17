@@ -24,8 +24,7 @@ class Station
     @train = train
      @trains = Array.new
     @trains.delete(@train)
-    puts "#{@trains.size}"
-    puts "#{@trains}"
+    puts "#{@trains.size} поездов на станции,#{@trains}"
   end
   def trains
     puts "#{@trains}"
@@ -41,6 +40,9 @@ end
 =end
 class Route
   def initialize
+    @first_station = first_station
+    @last_station = last_station
+    @stations = []
   end
 
 end
