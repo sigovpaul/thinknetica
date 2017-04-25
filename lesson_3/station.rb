@@ -15,10 +15,12 @@ class Station
   end
     def arrive(train)
     @train = train
-     @trains = Array.new
+    @trains = Array.new
     @trains.push(@train)
-    puts "#{@trains.size}"
-    puts "#{@trains}"
+    puts "Поезда на станции: #{@trains}"
+  end
+  def station_name
+    puts @name
   end
  def depart(train)
     @train = train
